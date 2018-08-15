@@ -24,10 +24,19 @@ FPVSum consists of 14 categories of videos from YouTube, resulting in a total nu
 
 ### How to get the videos
 
+**Prerequisites**
+* [youtube-dl](https://github.com/rg3/youtube-dl/)
 
- 
+**Run the scripts**
+To download the videos in the list, you can simply run the following commands:
+```
+mkdir video_dir
 
+chmod +x fetch_fpvsum_videos.sh
 
+./fetch_fpvsum_videos.sh video_dir FPVSum_videolist.csv
+```
+The script will check the existing videos in the directory. 
 
 ## Ground-Truth Scores
 
