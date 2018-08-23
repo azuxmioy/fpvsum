@@ -24,10 +24,10 @@ FPVSum consists of 14 categories of videos from YouTube, resulting in a total nu
 
 ### How to get the videos
 
-**Prerequisites**
+**Prerequisites**  
 * [youtube-dl](https://github.com/rg3/youtube-dl/)
 
-**Run the scripts**
+**Run the scripts**  
 To download the videos in the list, you may simply run the following commands:
 ```
 mkdir video_dir
@@ -40,8 +40,7 @@ chmod +x fetch_fpvsum_videos.sh
 
 ## Ground-Truth Scores
 
-We invite more than 15 volunteers to perform video annotation. Given each video, annotators are asked to produce a summary that contains most of its important content and highlight segments using our designed human interface. We observe that most annotators would lose concentration on assigning scores for very long videos. Thus, for each video category we select about 35% of the video sequences to be annotated with ground-truth scores, while the remaining are viewed as the unlabeled ones.
-
+We invite more than 15 volunteers to perform video annotation. Given each video, annotators are asked to produce a summary that contains most of its important content and highlight segments using our designed human interface. We observe that most annotators would lose concentration on assigning scores for very long videos. Thus, for each video category we select about 35% of the video sequences to be annotated with ground-truth scores, while the remaining are viewed as the unlabeled ones.  
 
 The details of our annotation process are shown as follows:
 
@@ -54,7 +53,8 @@ The details of our annotation process are shown as follows:
 
 <img src="https://github.com/azuxmioy/fpvsum/blob/master/images/UI.png" height="350">
 
-We provide a human interface (written in MATLAB language) for labeling video sequences. The interface shows each video excluding its audio track, ensuring annotators select highlight based on visual content only. Annotators are able to use the interface for moving forward and backward and modify their annotations at any time.
+We provide a user interface (written in MATLAB language) for labeling video sequences. The interface shows each video excluding its audio track, ensuring annotators select highlight based on visual content only. Annotators are able to use the interface for moving forward and backward and modify their annotations at any time.
 
 ## References
 
+Hsuan-I Ho, Wei-Chen Chiu, and Yu-Chiang Frank Wang: Summarizing First-Person Videos from Third Persons’ Points of Views. In: Proceedings of the European Conference on Computer Vision (ECCV) (2018)
