@@ -4,9 +4,11 @@ First-Person Video Summarization (FPVSum) dataset proposed in our ECCV 2018 pape
 
 ## Description
 
-First-Person Video Summarization (FPVSum) dataset is a benchmark to evaluate video summarization algorithms especially for first-person videos. FPVSum contains 14 categories of first-person videos captured by head- or body-mounted devices alongside their corrosponding human-annotated frame-level importance scores. The ground-truth scores are used for both training and evalutaion in this paper.
+First-Person Video Summarization (FPVSum) dataset is a benchmark to evaluate video summarization algorithms specifically for first-person videos. FPVSum contains 14 categories of first-person videos captured by head or body-mounted devices alongside their corrosponding human-annotated frame-level importance scores which are used for training and evalutaion in this paper.
 
-The files of FPVSum are listed as below. We provide lists and scripts to obtain selected first-person videos from YouTube. Both frame-level importance scores and the UI for annotation are also provided for public use.
+### File description
+
+The files of FPVSum are listed as below. We provide lists and scripts to obtain selected first-person videos from YouTube. In addition, both frame-level importance scores and the user interface for annotation are also provided for public use.
 
 ```
 fpvsum/
@@ -28,7 +30,7 @@ FPVSum consists of 14 categories of videos from YouTube, resulting in a total nu
 * [youtube-dl](https://github.com/rg3/youtube-dl/)
 
 **Run the scripts**  
-To download the videos in the list, you may simply run the following commands:
+To download the videos in the list, you may simply run the following commands in the crawler folder:
 ```
 mkdir video_dir
 
@@ -40,7 +42,7 @@ chmod +x fetch_fpvsum_videos.sh
 
 ## Ground-Truth Scores
 
-We invite more than 15 volunteers to perform video annotation. Given each video, annotators are asked to produce a summary that contains most of its important content and highlight segments using our designed human interface. We observe that most annotators would lose concentration on assigning scores for very long videos. Thus, for each video category we select about 35% of the video sequences to be annotated with ground-truth scores, while the remaining are viewed as the unlabeled ones.  
+We invited more than 15 volunteers to perform video annotation. Given each video, annotators are asked to produce a summary that contains most of its important content and highlight segments using our designed human interface. We observe that most annotators would lose concentration on assigning scores for very long videos. Thus, for each video category we select about 35% of the video sequences to be annotated with ground-truth scores, while the remaining are viewed as the unlabeled ones.  
 
 The details of our annotation process are shown as follows:
 
